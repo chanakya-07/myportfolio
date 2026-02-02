@@ -739,7 +739,7 @@ function ExperienceContent() {
       id: "dbu",
       title: "Graduate Student & Student Ambassador",
       company: "Dallas Baptist University",
-      period: "Aug 2023 - Dec 2024",
+      period: "Aug 2023 - May 2025",
       location: "Dallas, TX",
       level: 0, // Not a numbered level - education
       isEducation: true,
@@ -759,7 +759,7 @@ function ExperienceContent() {
       title: "Data Scientist",
       company: "Synovus Bank",
       period: "Dec 2024 - Present",
-      location: "Tampa, FL",
+      location: "United States",
       level: 3,
       color: "from-cyan-500 to-blue-600",
       bgColor: "bg-cyan-500",
