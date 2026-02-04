@@ -169,8 +169,8 @@ function AboutContent({ onOpenWindow }: AboutContentProps) {
             className="text-sm leading-relaxed mb-4"
           >
              Data Scientist with 4+ years of experience building and validating predictive models for credit risk and fraud detection across financial services and healthcare.
-             Experienced in feature engineering, statistical analysis, and model evaluation, with a strong foundation in data analysis and business analysis — translating business questions into data requirements, metrics, and actionable insights.
-             Skilled at working end-to-end, from raw data and SQL analysis to dashboards, models, and stakeholder-facing recommendations.
+             Experienced in feature engineering, statistical analysis, and model evaluation, with a strong foundation in data analysis and business analysis, translating business questions into data requirements and actionable insights.
+             Skilled at working end to end, from raw data and SQL analysis to dashboards, models, and stakeholder-facing recommendations.
           </motion.p>
           <motion.div
             initial={{ opacity: 0 }}
