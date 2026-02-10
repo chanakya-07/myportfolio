@@ -146,7 +146,7 @@ export function SidebarWidgets({ onOpenWindow }: SidebarWidgetsProps) {
     const commands = [
       "$ whoami",
       "> Chanakya Yadav",
-      "> Data Scientist",
+      "> Data Scientist/ Risk Analyst",
       "$ cat about.txt",
       "> 4+ yrs ML & Credit Risk",
       "> Predictive models expert",
@@ -249,7 +249,9 @@ export function SidebarWidgets({ onOpenWindow }: SidebarWidgetsProps) {
           </motion.button>
           <div>
             <h3 className="text-white font-bold text-lg">Chanakya Yadav</h3>
-            <p className="text-cyan-400 text-xs leading-relaxed">Data Scientist | 4+ Years | Credit Risk & Fraud Detection | Business/Data Analyst | ML | AI | Python</p>
+            <p className="text-cyan-400 text-xs leading-relaxed"><p>Senior Risk & Portfolio Analytics | Equity Risk Monitoring | P&L Driver Analysis | Python, SQL | United States
+</p>
+</p>
             <div className="flex items-center gap-1 text-slate-400 text-xs mt-1">
               <MapPin className="w-3 h-3" />
               <span>United States</span>
