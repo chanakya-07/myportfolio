@@ -18,7 +18,7 @@ export function WelcomeScreen({ onComplete }: WelcomeScreenProps) {
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const profileName = "Chanakya Yadav";
-  const profileTitle = "Data Scientist | 4+ Years | Credit Risk & Fraud Detection | Business/Data Analyst | ML | AI";
+  const profileTitle = "Senior Risk & Portfolio Analytics | Equity Risk Monitoring | P&L Driver Analysis | Python, SQL | United States";
 
   // Load profile image from localStorage
   useEffect(() => {
