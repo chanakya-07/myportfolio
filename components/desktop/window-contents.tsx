@@ -160,7 +160,9 @@ function AboutContent({ onOpenWindow }: AboutContentProps) {
           >
             <p className="text-sm text-cyan-400 mb-1">Welcome to my profile!</p>
             <h2 className="text-2xl font-bold mb-1">Chanakya Yadav</h2>
-            <p className="text-muted-foreground mb-4">Data Scientist | 4+ Years | Credit Risk & Fraud Detection | Business/Data Analyst | ML | AI | United States</p>
+            <p className="text-muted-foreground mb-4"> Senior Risk & Portfolio Analytics| 4+ Years | Equity Risk Monitoring | P&L Driver Analysis | Python, SQL | United States</p>
+
+           
           </motion.div>
           <motion.p
             initial={{ opacity: 0 }}
@@ -168,9 +170,10 @@ function AboutContent({ onOpenWindow }: AboutContentProps) {
             transition={{ delay: 0.4 }}
             className="text-sm leading-relaxed mb-4"
           >
-             Data Scientist with 4+ years of experience building and validating predictive models for credit risk and fraud detection across financial services and healthcare.
-             Experienced in feature engineering, statistical analysis, and model evaluation, with a strong foundation in data analysis and business analysis, translating business questions into data requirements and actionable insights.
-             Skilled at working end to end, from raw data and SQL analysis to dashboards, models, and stakeholder-facing recommendations.
+             Risk & analytics professional with 4+ years of experience supporting portfolio monitoring, performance analysis, and stakeholder-facing reporting in regulated environments.
+             I work hands-on with Python and advanced SQL to investigate what’s driving changes in risk and performance, build repeatable analytics workflows, and deliver clear summaries for decision-makers.
+             Strong focus on data quality, validation, and automation so the reporting is reliable and fast.
+
           </motion.p>
           <motion.div
             initial={{ opacity: 0 }}
@@ -315,7 +318,7 @@ function TerminalContent() {
     { prompt: true, text: "whoami" },
     { prompt: false, text: "Chanakya Yadav - Data Scientist" },
     { prompt: true, text: "cat about.txt" },
-    { prompt: false, text: "4+ years experience in credit risk and fraud detection." },
+    { prompt: false, text: "4+ years supporting portfolio monitoring, risk analytics, and automated reporting." },
     { prompt: false, text: "Building predictive models for banking and healthcare." },
     { prompt: true, text: "cat skills.txt" },
     { prompt: false, text: "Python, pandas, NumPy, scikit-learn, XGBoost, SHAP" },
@@ -715,7 +718,7 @@ function ExperienceContent() {
     },
     {
       id: "molina",
-      title: "Data Scientist",
+      title: "Risk Analytics",
       company: "Molina Healthcare",
       period: "Jun 2021 - Aug 2023",
       location: "United States",
@@ -756,7 +759,7 @@ function ExperienceContent() {
     },
     {
       id: "synovus",
-      title: "Data Scientist",
+      title: "Risk & Portfolio Analytics",
       company: "Synovus Bank",
       period: "Dec 2024 - Present",
       location: "United States",
