@@ -51,7 +51,7 @@ const fileTree: FileNode[] = [
 const fileContents: Record<string, string> = {
   "about_me.py": `"""
 ╔═══════════════════════════════════════════════╗
-║         CHANAKYA YADAV - DATA SCIENTIST       ║
+║         CHANAKYA YADAV - DATA ANALYST       ║
 ╚═══════════════════════════════════════════════╝
 """
 
@@ -60,7 +60,7 @@ class AboutMe:
     
     def __init__(self):
         self.name = "Chanakya Yadav"
-        self.title = "Data Scientist"
+        self.title = "Data Analyst"
         self.location = "United States"
         self.phone = "(214) 929-8802"
         self.email = "chanakya.csv@gmail.com"
@@ -95,8 +95,8 @@ class AboutMe:
     def contact(self):
         print("📧 Email: chanakya.csv@gmail.com")
         print("📞 Phone: (214) 929-8802")
-        print("💼 LinkedIn: linkedin.com/in/chanakyayadav1")
-        print("🐙 GitHub: github.com/chanakyayadav")
+        print("💼 LinkedIn: https://linkedin.com/in/chanakya-csv")
+        print("🐙 GitHub: https://github.com/chanakya-07")
 
 
 if __name__ == "__main__":
