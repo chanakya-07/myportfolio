@@ -160,7 +160,7 @@ function AboutContent({ onOpenWindow }: AboutContentProps) {
           >
             <p className="text-sm text-cyan-400 mb-1">Welcome to my profile!</p>
             <h2 className="text-2xl font-bold mb-1">Chanakya Yadav</h2>
-            <p className="text-muted-foreground mb-4"> Senior Risk & Portfolio Analytics| 4+ Years | Equity Risk Monitoring | P&L Driver Analysis | Python, SQL | United States</p>
+            <p className="text-muted-foreground mb-4">Data Analyst | 4+ Years | SQL, Python, Tableau, Power BI | Banking & Healthcare Analytics | Snowflake, AWS, Azure| United States</p>
 
            
           </motion.div>
@@ -170,9 +170,9 @@ function AboutContent({ onOpenWindow }: AboutContentProps) {
             transition={{ delay: 0.4 }}
             className="text-sm leading-relaxed mb-4"
           >
-             Risk & analytics professional with 4+ years of experience supporting portfolio monitoring, performance analysis, and stakeholder-facing reporting in regulated environments.
-             I work hands-on with Python and advanced SQL to investigate what’s driving changes in risk and performance, build repeatable analytics workflows, and deliver clear summaries for decision-makers.
-             Strong focus on data quality, validation, and automation so the reporting is reliable and fast.
+             Data Analyst with 4+ years of experience driving data-informed decisions across banking, healthcare, and e-commerce sectors, translating complex datasets into actionable business strategies that drove $1.7M+ in cost savings.
+             Proficient in SQL, Python, R, SAS, Tableau, Power BI, Looker, Snowflake, dbt, and Apache Airflow. Experienced in building executive dashboards, predictive models, and data governance practices on AWS, GCP, and Azure.
+             Proven ability to deliver compelling data stories to C-suite stakeholders in Agile/Scrum environments.
 
           </motion.p>
           <motion.div
@@ -316,16 +316,16 @@ function DocumentsContent() {
 function TerminalContent() {
   const lines = [
     { prompt: true, text: "whoami" },
-    { prompt: false, text: "Chanakya Yadav - Data Scientist" },
+    { prompt: false, text: "Chanakya Yadav - Data Analyst" },
     { prompt: true, text: "cat about.txt" },
-    { prompt: false, text: "4+ years supporting portfolio monitoring, risk analytics, and automated reporting." },
-    { prompt: false, text: "Building predictive models for banking and healthcare." },
+    { prompt: false, text: "4+ years driving data-informed decisions across banking, healthcare, and e-commerce." },
+    { prompt: false, text: "$1.7M+ in cost savings. Dashboards, predictive models, data governance." },
     { prompt: true, text: "cat skills.txt" },
     { prompt: false, text: "Python, pandas, NumPy, scikit-learn, XGBoost, SHAP" },
     { prompt: false, text: "SQL Server, PostgreSQL, Power BI, Tableau" },
     { prompt: false, text: "Azure ML, Databricks, AWS S3, Snowflake, Git" },
     { prompt: true, text: "cat experience.txt" },
-    { prompt: false, text: "Synovus Bank | Molina Healthcare | Ericsson" },
+    { prompt: false, text: "Synovus Bank | Molina Healthcare | Swiggy" },
     { prompt: true, text: "" },
   ];
 
@@ -516,12 +516,13 @@ function SettingsContent() {
 function SkillsContent() {
   // Real individual tech skills from resume
   const allSkills = [
-    "Python", "SQL", "PySpark", "R", "Git", "pandas", "NumPy", "scikit-learn", 
-    "matplotlib", "seaborn", "XGBoost", "SHAP", "TensorFlow", "PyTorch",
-    "Snowflake", "Databricks", "Spark", "Hadoop", "Hive", "PostgreSQL", "MySQL",
-    "Power BI", "Tableau", "Plotly", "Looker", "DAX",
-    "Azure ML", "AWS S3", "AWS EC2", "Airflow", "Docker",
-    "SMOTE", "ARIMA", "Prophet", "NLP"
+    "Python", "SQL", "R", "SAS", "Git", "pandas", "NumPy", "scikit-learn",
+    "matplotlib", "TensorFlow", "XGBoost", "NLP", "GenAI", "LLM",
+    "Snowflake", "Databricks", "dbt", "PostgreSQL", "MySQL", "MongoDB",
+    "Power BI", "Tableau", "Looker", "LookML", "DAX", "Advanced Excel",
+    "Azure", "AWS", "GCP", "BigQuery", "Airflow", "SSIS",
+    "ARIMA", "Bayesian Analysis", "A/B Testing", "JIRA", "Confluence",
+    "Jupyter Notebooks", "Power Query", "VBA"
   ];
 
   const skillColors: Record<string, string> = {
@@ -697,28 +698,31 @@ function ExperienceContent() {
   // Game map style - vertical layout like Candy Crush level map
   const experience = [
     {
-      id: "ericsson",
+      id: "swiggy",
       title: "Data Analyst",
-      company: "Ericsson",
+      company: "Swiggy",
       period: "Apr 2020 - May 2021",
-      location: "Bangalore, India",
+      location: "India",
       level: 1,
       color: "from-amber-500 to-orange-600",
       bgColor: "bg-amber-500",
       glowColor: "rgba(245,158,11,0.5)",
       markerColor: "#f59e0b",
-      skills: ["SQL", "Python", "pandas", "matplotlib", "Excel", "Hadoop", "Hive", "PySpark", "R"],
+      skills: ["SQL", "Python", "Tableau", "Power BI", "ARIMA", "Scikit-learn", "Git", "Azure", "pandas"],
       work: [
-        "Analyzed 2M+ daily records of network performance data using SQL queries on PostgreSQL and MySQL - identified KPI trends across 8-10 regional markets",
-        "Built automated reporting pipelines with Python and SQL, creating scheduled jobs that generated daily/weekly extracts, reducing manual work by 30-40%",
-        "Developed time series models using ARIMA and exponential smoothing for network capacity forecasting",
-        "Worked with Hadoop HDFS for distributed storage and Hive for querying large telecom datasets using Spark SQL",
-        "Applied statistical methods including hypothesis testing (t-tests, chi-square) and regression analysis to validate network upgrades",
+        "Increased order frequency by 10% by analyzing customer purchase behavior and order trends using EDA and Tableau, generating insights that optimized promotional campaigns",
+        "Improved inventory planning and reduced stockouts by 15% by building sales forecasting models using ARIMA, Python, and Pandas",
+        "Created interactive dashboards in Tableau and Power BI using SQL and Python scripts to monitor delivery performance and operational KPIs",
+        "Increased customer retention by 8% by conducting customer segmentation using Python, Scikit-learn, and clustering algorithms",
+        "Improved on-time delivery by 12% by implementing predictive delivery time models using Python and regression analysis",
+        "Developed unit economics models tracking LTV/CAC ratios, providing insights that improved marketing ROI by 15%",
+        "Maintained version-controlled analytics codebases using Git/GitHub on Azure",
       ],
     },
+
     {
       id: "molina",
-      title: "Risk Analytics",
+      title: "Data Analyst",
       company: "Molina Healthcare",
       period: "Jun 2021 - Aug 2023",
       location: "United States",
@@ -727,15 +731,16 @@ function ExperienceContent() {
       bgColor: "bg-purple-500",
       glowColor: "rgba(168,85,247,0.5)",
       markerColor: "#a855f7",
-      skills: ["Python", "XGBoost", "Random Forest", "SQL", "Power BI", "Tableau", "AWS", "Snowflake", "PySpark", "Airflow", "TensorFlow"],
+      skills: ["Python", "SQL", "Tableau", "Power BI", "Airflow", "MongoDB", "AWS", "Snowflake", "TensorFlow", "scikit-learn", "Excel", "R", "PostgreSQL", "SSIS"],
       work: [
-        "Developed fraud, waste, and abuse detection models analyzing 1.8M+ monthly Medicaid/Medicare claims across 19 state health plans - achieved 0.76 AUC, flagging $2.2M in potential overpayments",
-        "Built prior authorization prediction models to forecast denial likelihood on 400K+ monthly requests - reduced denial rates from 27% to 23%",
-        "Created member risk stratification models for 5.5M Medicaid members using K-means and hierarchical clustering for care management prioritization",
-        "Designed A/B tests measuring impact of telephonic outreach on ER utilization - 16% reduction with 95% confidence intervals",
-        "Built time series forecasting models using ARIMA and Prophet on AWS - predicted monthly claim volumes with 5-9% MAPE",
-        "Built NLP sentiment analysis on 72K+ member grievance texts using TensorFlow and scikit-learn",
-        "Created ETL pipelines on AWS using Python, SQL, and Airflow with Snowflake data warehouse",
+        "Reduced patient readmission rates by 15% by developing predictive models using Python (scikit-learn) and logistic regression on 500K+ patient records",
+        "Recovered over $500K in overpaid claims by performing claims data analysis and fraud detection using Python, SQL, and statistical testing",
+        "Reduced manual ETL effort by 30% by automating data pipelines using Python, Apache Airflow, and MongoDB",
+        "Streamlined care management reporting by designing interactive Tableau dashboards and Power BI reports using SQL, DAX, and SSIS",
+        "Improved reporting compliance by 20% by developing KPI dashboards tracking HEDIS and CMS quality measures",
+        "Improved early intervention in high-risk cases by implementing NLP-based predictive risk scoring using Python and TensorFlow",
+        "Designed cohort analysis frameworks to track patient engagement and retention, improving care plan adherence by 18%",
+        "Built advanced Excel financial models with pivot tables, Power Query, and VBA macros for ad hoc claims analysis",
       ],
     },
     {
@@ -759,7 +764,7 @@ function ExperienceContent() {
     },
     {
       id: "synovus",
-      title: "Risk & Portfolio Analytics",
+      title: "Data Analyst",
       company: "Synovus Bank",
       period: "Dec 2024 - Present",
       location: "United States",
@@ -768,16 +773,19 @@ function ExperienceContent() {
       bgColor: "bg-cyan-500",
       glowColor: "rgba(6,182,212,0.5)",
       markerColor: "#06b6d4",
-      skills: ["Python", "XGBoost", "Random Forest", "SHAP", "SQL", "Snowflake", "Power BI", "Azure ML", "Databricks", "Airflow", "Docker"],
+      skills: ["Python", "SQL", "Power BI", "Tableau", "SAS", "DAX", "Snowflake", "Airflow", "AWS Redshift", "GCP BigQuery", "R", "scikit-learn", "ARIMA", "NoSQL", "GenAI"],
       work: [
-        "Built credit risk and fraud detection models using XGBoost and Random Forest on 250K accounts and 3M monthly transactions - achieving 0.80-0.82 AUC with SHAP explanations",
-        "Collaborated with Risk Management, Compliance, Data Engineering using Agile - sprint planning, standups, and retrospectives",
-        "Presented model performance and risk insights to senior leadership - translated technical metrics into strategic decisions",
-        "Engineered features using SQL window functions in Snowflake - velocity metrics, utilization trends improved model discrimination by 10-12%",
-        "Built automated ML pipelines with Airflow on Azure - reduced monthly model retraining from 8 hours to 2 hours",
-        "Processed large datasets with PySpark on Databricks - optimized joins and partitioning for performance",
-        "Created Power BI dashboards with DAX calculations for daily credit decisions by stakeholders",
+        "Reduced default risk by 12% by developing predictive credit risk models using Python (scikit-learn), SQL, and regression analysis",
+        "Increased fraud detection efficiency by 18% by automating anomaly detection leveraging Python, SQL, and time-series analysis",
+        "Reduced monthly reporting effort by 40% by building interactive dashboards in Power BI and Tableau using SQL, DAX, and SAS",
+        "Improved cross-sell success rate by 22% by implementing customer segmentation using Python, R, and Scikit-learn",
+        "Reduced data processing times by 35% by optimizing AI-driven ETL pipelines via Apache Airflow in Snowflake and AWS Redshift",
+        "Identified cost-saving opportunities worth $1.2M annually by performing ad hoc analyses within Agile/Scrum frameworks",
+        "Established data governance standards, implementing data quality checks and data lineage tracking (95% reporting accuracy)",
+        "Presented quarterly insights to C-suite executives, influencing $2M+ in capital allocation decisions",
+        "Leveraged GenAI tools and LLM-assisted analytics for automated report generation, reducing manual analysis time by 20%",
       ],
+
     },
   ];
 
@@ -799,7 +807,8 @@ function ExperienceContent() {
             <GraduationCap className="w-5 h-5 text-purple-400" />
             <div>
               <p className="text-xs text-white font-medium">Dallas Baptist University</p>
-              <p className="text-xs text-slate-400">MS in Information Systems | Student Ambassador</p>
+              <p className="text-xs text-slate-400">MS in Information Systems and Management | Student Ambassador</p>
+
             </div>
           </div>
         </div>
@@ -924,7 +933,7 @@ function ExperienceContent() {
 
             {/* Level Nodes - Game map style - reverse order so Level 3 is at top */}
             <div className="relative flex flex-col-reverse items-center gap-24 py-16" style={{ minHeight: '700px' }}>
-              {/* Level 1 - Bottom - Ericsson */}
+              {/* Level 1 - Bottom - Swiggy */}
               <motion.div
                 className="relative z-10"
                 style={{ marginLeft: '-20%' }}
