@@ -84,12 +84,11 @@ class AboutMe:
     
     def get_summary(self) -> str:
         return """
-        Data Scientist with 4+ years of experience
-        building and deploying predictive models for
-        credit risk and fraud detection in financial
-        services and healthcare. Strong foundation in
-        feature engineering, model validation, and
-        statistical analysis.
+        Data Analyst with 4+ years of experience driving
+        data-informed decisions across banking, healthcare,
+        and e-commerce sectors. Delivered $1.7M+ in
+        measurable cost savings and revenue impact through
+        predictive analytics, KPI frameworks, and BI dashboards.
         """
 
     def contact(self):
@@ -112,18 +111,26 @@ Technical Skills & Expertise
 
 class TechnicalSkills:
     
-    ml_and_stats = {
-        "XGBoost/Gradient Boosting": "████████████████████ 95%",
-        "Random Forest": "████████████████████ 95%",
-        "Logistic Regression": "██████████████████░░ 90%",
-        "SHAP/Feature Importance": "██████████████████░░ 90%",
-    }
-    
-    programming = {
-        "Python (pandas, NumPy, scikit-learn)": "████████████████████ 95%",
-        "SQL (CTEs, Window Functions)": "██████████████████░░ 90%",
-        "Data Validation/ETL": "████████████████░░░░ 85%",
-    }
+   data_analytics = {
+    "SQL (PostgreSQL, T-SQL, MySQL)": "████████████████████ 95%",
+    "Advanced Excel (Pivot, VBA)": "██████████████████░░ 90%",
+    "Python (pandas, NumPy)": "██████████████████░░ 90%",
+    "EDA & Root Cause Analysis": "████████████████████ 95%",
+}
+
+bi_visualization = {
+    "Power BI (DAX, Power Query)": "██████████████████░░ 90%",
+    "Tableau": "██████████████████░░ 90%",
+    "Looker (LookML)": "██████████████░░░░░░ 80%",
+}
+
+modern_data_stack = {
+    "dbt": "██████████████░░░░░░ 80%",
+    "Apache Airflow": "██████████████░░░░░░ 80%",
+    "Snowflake": "████████████████░░░░ 85%",
+    "AWS / GCP / Azure": "████████████████░░░░ 85%",
+}
+
     
     tools_platforms = [
         "SQL Server",
@@ -179,7 +186,7 @@ class Experience:
 
 work_history = [
     Experience(
-        role="Data Scientist",
+        role="Data Analyst",
         company="Synovus Bank",
         location="United States",
         duration="Dec 2024 - Present",
@@ -207,7 +214,7 @@ work_history = [
     ),
     Experience(
         role="Data Analyst",
-        company="Ericsson",
+        company="Swiggy",
         location="Bangalore, India",
         duration="Apr 2020 - May 2021",
         highlights=[
@@ -286,20 +293,18 @@ setTimeout(() => {
   "",
   "📧 Email: chanakya.csv@gmail.com",
   "📞 Phone: (214) 929-8802",
-  "💼 LinkedIn: linkedin.com/in/chanakyayadav1",
-  "🐙 GitHub: github.com/chanakyayadav",
+  "💼 LinkedIn: linkedin.com/in/chanakya-csv",
+  "🐙 GitHub: https://github.com/chanakya-07",
   ]);
   } else if (activeFile === "skills.py") {
   setOutput([
   "==================================================",
-  "          ML & STATISTICS",
+  "          DATA ANALYTICS",
   "==================================================",
-  "XGBoost/Gradient Boosting",
-  "  ██��█████████████████ 95%",
-  "Random Forest",
-  "  ████████████████████ 95%",
-  "SHAP/Feature Importance",
-  "  ██████████████████░░ 90%",
+  "SQL (PostgreSQL, T-SQL, MySQL)": "████████████████████ 95%",
+    "Advanced Excel (Pivot, VBA)": "██████████████████░░ 90%",
+    "Python (pandas, NumPy)": "██████████████████░░ 90%",
+    "EDA & Root Cause Analysis": "████████████████████ 95%",,
   ]);
   } else if (activeFile === "experience.py") {
   setOutput([
@@ -307,12 +312,12 @@ setTimeout(() => {
   "            PROFESSIONAL EXPERIENCE",
   "============================================================",
   "",
-  "🏢 Data Scientist @ Synovus Bank",
+  "🏢 Data Analyst @ Synovus Bank",
   "📍 United States | 📅 Dec 2024 - Present",
   "  • Build predictive models for credit risk (0.80+ AUC)",
   "  • Engineer datasets from 250K+ accounts",
   "",
-  "🏢 Data Scientist @ Molina Healthcare",
+  "🏢 Data Analyst @ Molina Healthcare",
   "📍 United States | 📅 Jun 2021 - Aug 2023",
   "  • Built readmission risk models (0.79 AUC)",
   ]);
