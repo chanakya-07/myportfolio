@@ -249,7 +249,7 @@ export function SidebarWidgets({ onOpenWindow }: SidebarWidgetsProps) {
           </motion.button>
           <div>
             <h3 className="text-white font-bold text-lg">Chanakya Yadav</h3>
-            <p className="text-cyan-400 text-xs leading-relaxed"><p>Data Analyst | 4+ Years | SQL, Python, Tableau, Power BI | Banking & Healthcare Analytics | Snowflake, AWS, Azure | United States
+            <p className="text-cyan-400 text-xs leading-relaxed"><p>Data Analyst | 4+ Years | SQL, Python, Tableau, Power BI | Banking & Healthcare Analytics | Snowflake, AWS, Azure
 </p>
 </p>
             <div className="flex items-center gap-1 text-slate-400 text-xs mt-1">
