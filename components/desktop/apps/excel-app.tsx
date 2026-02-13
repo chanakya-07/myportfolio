@@ -25,46 +25,45 @@ interface SkillData {
 }
 
 const skillsData: SkillData[] = [
-  // Programming Languages & Tools
-  { category: "Python", skill: "Python", proficiency: 95, yearsExp: 4, projects: 25, usedAt: ["Synovus Bank", "Molina Healthcare", "Ericsson"] },
-  { category: "SQL", skill: "SQL", proficiency: 95, yearsExp: 4, projects: 22, usedAt: ["Synovus Bank", "Molina Healthcare", "Ericsson"] },
-  { category: "PySpark", skill: "PySpark", proficiency: 92, yearsExp: 3, projects: 12, usedAt: ["Synovus Bank", "Molina Healthcare"] },
-  { category: "R", skill: "R", proficiency: 88, yearsExp: 2, projects: 5, usedAt: ["Ericsson"] },
-  { category: "Git", skill: "Git/GitHub", proficiency: 92, yearsExp: 4, projects: 30, usedAt: ["Synovus Bank", "Molina Healthcare", "Ericsson"] },
-  // ML/AI Libraries
-  { category: "scikit-learn", skill: "scikit-learn", proficiency: 95, yearsExp: 4, projects: 20, usedAt: ["Synovus Bank", "Molina Healthcare", "Ericsson"] },
-  { category: "SHAP", skill: "SHAP", proficiency: 92, yearsExp: 3, projects: 10, usedAt: ["Synovus Bank", "Molina Healthcare"] },
-  { category: "TensorFlow", skill: "TensorFlow", proficiency: 88, yearsExp: 2, projects: 4, usedAt: ["Molina Healthcare"] },
-  { category: "PyTorch", skill: "PyTorch", proficiency: 88, yearsExp: 2, projects: 4, usedAt: ["Molina Healthcare"] },
-  // Data Tools
-  { category: "pandas", skill: "pandas", proficiency: 95, yearsExp: 4, projects: 28, usedAt: ["Synovus Bank", "Molina Healthcare", "Ericsson"] },
-  { category: "NumPy", skill: "NumPy", proficiency: 95, yearsExp: 4, projects: 25, usedAt: ["Synovus Bank", "Molina Healthcare", "Ericsson"] },
-  { category: "Snowflake", skill: "Snowflake", proficiency: 92, yearsExp: 3, projects: 12, usedAt: ["Synovus Bank", "Molina Healthcare"] },
-  { category: "Databricks", skill: "Databricks", proficiency: 92, yearsExp: 3, projects: 10, usedAt: ["Synovus Bank", "Molina Healthcare"] },
-  { category: "Spark", skill: "Spark", proficiency: 90, yearsExp: 3, projects: 10, usedAt: ["Synovus Bank", "Molina Healthcare"] },
-  { category: "Hadoop", skill: "Hadoop/Hive", proficiency: 88, yearsExp: 2, projects: 6, usedAt: ["Ericsson"] },
-  { category: "PostgreSQL", skill: "PostgreSQL", proficiency: 92, yearsExp: 4, projects: 15, usedAt: ["Ericsson", "Molina Healthcare"] },
-  { category: "MySQL", skill: "MySQL", proficiency: 90, yearsExp: 4, projects: 12, usedAt: ["Ericsson"] },
-  { category: "SQL Server", skill: "SQL Server", proficiency: 92, yearsExp: 3, projects: 10, usedAt: ["Synovus Bank"] },
-  // Visualization
-  { category: "Power BI", skill: "Power BI (DAX)", proficiency: 95, yearsExp: 4, projects: 18, usedAt: ["Synovus Bank", "Molina Healthcare"] },
-  { category: "Tableau", skill: "Tableau", proficiency: 92, yearsExp: 3, projects: 12, usedAt: ["Molina Healthcare", "Ericsson"] },
-  { category: "Plotly", skill: "Plotly", proficiency: 92, yearsExp: 3, projects: 14, usedAt: ["Synovus Bank", "Molina Healthcare", "Ericsson"] },
-  { category: "matplotlib", skill: "matplotlib/seaborn", proficiency: 92, yearsExp: 4, projects: 20, usedAt: ["Synovus Bank", "Molina Healthcare", "Ericsson"] },
-  { category: "Looker", skill: "Looker", proficiency: 88, yearsExp: 2, projects: 5, usedAt: ["Molina Healthcare"] },
-  // Cloud & Infrastructure
-  { category: "Azure ML", skill: "Azure ML Studio", proficiency: 92, yearsExp: 3, projects: 10, usedAt: ["Synovus Bank"] },
-  { category: "Azure", skill: "Azure Databricks", proficiency: 92, yearsExp: 3, projects: 8, usedAt: ["Synovus Bank"] },
-  { category: "Azure Fabric", skill: "Azure Fabric", proficiency: 88, yearsExp: 2, projects: 5, usedAt: ["Synovus Bank"] },
-  { category: "AWS", skill: "AWS S3/EC2/Lambda", proficiency: 90, yearsExp: 3, projects: 10, usedAt: ["Molina Healthcare"] },
-  { category: "Airflow", skill: "Airflow", proficiency: 92, yearsExp: 3, projects: 8, usedAt: ["Synovus Bank", "Molina Healthcare"] },
-  { category: "Docker", skill: "Docker", proficiency: 88, yearsExp: 2, projects: 6, usedAt: ["Synovus Bank"] },
-  // Statistical Methods
-  { category: "A/B Testing", skill: "A/B Testing", proficiency: 92, yearsExp: 3, projects: 10, usedAt: ["Molina Healthcare"] },
-  { category: "Statistics", skill: "Hypothesis Testing", proficiency: 92, yearsExp: 4, projects: 12, usedAt: ["Molina Healthcare", "Ericsson"] },
-  { category: "Statistics", skill: "Regression Analysis", proficiency: 95, yearsExp: 4, projects: 15, usedAt: ["Synovus Bank", "Molina Healthcare", "Ericsson"] },
-  { category: "SMOTE", skill: "SMOTE/Class Imbalance", proficiency: 92, yearsExp: 3, projects: 8, usedAt: ["Synovus Bank", "Molina Healthcare"] },
-  { category: "Feature Eng", skill: "Feature Engineering", proficiency: 95, yearsExp: 4, projects: 20, usedAt: ["Synovus Bank", "Molina Healthcare", "Ericsson"] },
+  // Languages & Querying
+  { category: "Python", skill: "Python (pandas, NumPy, scikit-learn)", proficiency: 95, yearsExp: 4, projects: 25, usedAt: ["Synovus Bank", "Molina Healthcare", "Swiggy"] },
+  { category: "SQL", skill: "SQL (PostgreSQL, MySQL, T-SQL)", proficiency: 95, yearsExp: 4, projects: 22, usedAt: ["Synovus Bank", "Molina Healthcare", "Swiggy"] },
+  { category: "R", skill: "R", proficiency: 85, yearsExp: 3, projects: 8, usedAt: ["Synovus Bank", "Swiggy"] },
+  { category: "SAS", skill: "SAS", proficiency: 85, yearsExp: 3, projects: 6, usedAt: ["Synovus Bank"] },
+  { category: "NoSQL", skill: "MongoDB (NoSQL)", proficiency: 82, yearsExp: 2, projects: 5, usedAt: ["Synovus Bank", "Molina Healthcare"] },
+  // BI & Visualization
+  { category: "Power BI", skill: "Power BI (DAX, Power Query)", proficiency: 92, yearsExp: 4, projects: 18, usedAt: ["Synovus Bank", "Molina Healthcare", "Swiggy"] },
+  { category: "Tableau", skill: "Tableau", proficiency: 92, yearsExp: 4, projects: 16, usedAt: ["Synovus Bank", "Molina Healthcare", "Swiggy"] },
+  { category: "Looker", skill: "Looker (LookML)", proficiency: 80, yearsExp: 2, projects: 5, usedAt: ["Molina Healthcare"] },
+  { category: "Excel", skill: "Advanced Excel (Pivot, VBA, Macros)", proficiency: 92, yearsExp: 4, projects: 20, usedAt: ["Synovus Bank", "Molina Healthcare", "Swiggy"] },
+  // Statistics & ML
+  { category: "scikit-learn", skill: "scikit-learn", proficiency: 92, yearsExp: 4, projects: 18, usedAt: ["Synovus Bank", "Molina Healthcare", "Swiggy"] },
+  { category: "A/B Testing", skill: "A/B Testing", proficiency: 92, yearsExp: 3, projects: 10, usedAt: ["Synovus Bank", "Molina Healthcare"] },
+  { category: "Statistics", skill: "Hypothesis Testing & Regression", proficiency: 92, yearsExp: 4, projects: 15, usedAt: ["Synovus Bank", "Molina Healthcare", "Swiggy"] },
+  { category: "ARIMA", skill: "Time Series (ARIMA)", proficiency: 88, yearsExp: 3, projects: 8, usedAt: ["Synovus Bank", "Swiggy"] },
+  { category: "Clustering", skill: "Clustering & Segmentation", proficiency: 88, yearsExp: 3, projects: 10, usedAt: ["Synovus Bank", "Molina Healthcare", "Swiggy"] },
+  { category: "Feature Eng", skill: "Feature Engineering", proficiency: 92, yearsExp: 4, projects: 18, usedAt: ["Synovus Bank", "Molina Healthcare", "Swiggy"] },
+  { category: "Bayesian", skill: "Bayesian Analysis", proficiency: 80, yearsExp: 2, projects: 4, usedAt: ["Synovus Bank"] },
+  // Data Engineering & Modern Data Stack
+  { category: "Airflow", skill: "Apache Airflow", proficiency: 85, yearsExp: 3, projects: 10, usedAt: ["Synovus Bank", "Molina Healthcare"] },
+  { category: "dbt", skill: "dbt", proficiency: 80, yearsExp: 2, projects: 6, usedAt: ["Synovus Bank"] },
+  { category: "SSIS", skill: "SSIS", proficiency: 82, yearsExp: 2, projects: 5, usedAt: ["Molina Healthcare"] },
+  { category: "ETL", skill: "ETL/ELT Pipelines", proficiency: 90, yearsExp: 4, projects: 15, usedAt: ["Synovus Bank", "Molina Healthcare"] },
+  // Cloud Platforms
+  { category: "Snowflake", skill: "Snowflake", proficiency: 88, yearsExp: 3, projects: 12, usedAt: ["Synovus Bank", "Molina Healthcare"] },
+  { category: "AWS", skill: "AWS (S3, Redshift, Glue)", proficiency: 85, yearsExp: 3, projects: 10, usedAt: ["Synovus Bank", "Molina Healthcare"] },
+  { category: "GCP", skill: "GCP (BigQuery)", proficiency: 85, yearsExp: 2, projects: 6, usedAt: ["Synovus Bank"] },
+  { category: "Azure", skill: "Azure (Synapse, Data Factory)", proficiency: 85, yearsExp: 3, projects: 8, usedAt: ["Synovus Bank", "Swiggy"] },
+  { category: "Databricks", skill: "Databricks", proficiency: 82, yearsExp: 2, projects: 5, usedAt: ["Synovus Bank"] },
+  // AI & GenAI
+  { category: "NLP", skill: "NLP", proficiency: 85, yearsExp: 2, projects: 4, usedAt: ["Molina Healthcare"] },
+  { category: "TensorFlow", skill: "TensorFlow", proficiency: 82, yearsExp: 2, projects: 4, usedAt: ["Molina Healthcare"] },
+  { category: "GenAI", skill: "GenAI / LLM-Assisted Analytics", proficiency: 80, yearsExp: 1, projects: 3, usedAt: ["Synovus Bank"] },
+  // Tools & Collaboration
+  { category: "Git", skill: "Git/GitHub", proficiency: 90, yearsExp: 4, projects: 28, usedAt: ["Synovus Bank", "Molina Healthcare", "Swiggy"] },
+  { category: "Jupyter", skill: "Jupyter Notebooks", proficiency: 92, yearsExp: 4, projects: 22, usedAt: ["Synovus Bank", "Molina Healthcare", "Swiggy"] },
+  { category: "JIRA", skill: "JIRA", proficiency: 88, yearsExp: 3, projects: 15, usedAt: ["Synovus Bank", "Molina Healthcare"] },
+  { category: "Confluence", skill: "Confluence", proficiency: 85, yearsExp: 3, projects: 12, usedAt: ["Synovus Bank", "Molina Healthcare"] },
 ];
 
 const columns = ["A", "B", "C", "D", "E", "F", "G"];
@@ -91,8 +90,9 @@ export function ExcelApp() {
   }, []);
 
   const getLevel = (proficiency: number) => {
-    if (proficiency >= 85) return { text: "Expert", color: "text-green-600 bg-green-100" };
-    return { text: "Advanced", color: "text-blue-600 bg-blue-100" };
+    if (proficiency >= 90) return { text: "Expert", color: "text-green-600 bg-green-100" };
+    if (proficiency >= 80) return { text: "Advanced", color: "text-blue-600 bg-blue-100" };
+    return { text: "Proficient", color: "text-amber-600 bg-amber-100" };
   };
 
   const renderSkillsTab = () => (
@@ -178,9 +178,7 @@ export function ExcelApp() {
                             ? "bg-gradient-to-r from-green-400 to-green-600"
                             : skill.proficiency >= 80
                               ? "bg-gradient-to-r from-blue-400 to-blue-600"
-                              : skill.proficiency >= 70
-                                ? "bg-gradient-to-r from-amber-400 to-amber-600"
-                                : "bg-gradient-to-r from-gray-400 to-gray-500"
+                              : "bg-gradient-to-r from-amber-400 to-amber-600"
                         }`}
                       />
                     </div>
@@ -251,7 +249,7 @@ export function ExcelApp() {
     const avgProficiency = Math.round(skillsData.reduce((sum, s) => sum + s.proficiency, 0) / skillsData.length);
     const expertSkills = skillsData.filter((s) => s.proficiency >= 90).length;
     const categories = [...new Set(skillsData.map((s) => s.category))];
-    const companies = ["Synovus Bank", "Molina Healthcare", "Ericsson"];
+    const companies = ["Synovus Bank", "Molina Healthcare", "Swiggy"];
 
     return (
       <div className="flex-1 overflow-auto p-4 bg-gradient-to-br from-gray-50 to-white">
@@ -297,7 +295,7 @@ export function ExcelApp() {
                     transition={{ delay: i * 0.1 }}
                     className="flex items-center gap-3"
                   >
-                    <span className="w-16 text-xs font-medium text-gray-700">{category}</span>
+                    <span className="w-16 text-xs font-medium text-gray-700 truncate">{category}</span>
                     <div className="flex-1 h-5 bg-gray-100 rounded-full overflow-hidden">
                       <motion.div
                         initial={{ width: 0 }}
