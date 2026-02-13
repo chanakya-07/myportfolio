@@ -51,7 +51,7 @@ const fileTree: FileNode[] = [
 const fileContents: Record<string, string> = {
   "about_me.py": `"""
 ╔═══════════════════════════════════════════════╗
-║         CHANAKYA YADAV - DATA ANALYST       ║
+║         CHANAKYA YADAV - DATA ANALYST         ║
 ╚═══════════════════════════════════════════════╝
 """
 
@@ -61,7 +61,6 @@ class AboutMe:
     def __init__(self):
         self.name = "Chanakya Yadav"
         self.title = "Data Analyst"
-        self.location = "United States"
         self.phone = "(214) 929-8802"
         self.email = "chanakya.csv@gmail.com"
         
@@ -69,17 +68,21 @@ class AboutMe:
             {
                 "degree": "M.S. Information Systems & Management",
                 "school": "Dallas Baptist University",
-                "gpa": "3.80/4.00",
                 "year": "Aug 2023 - May 2025"
             }
         ]
         
+        self.certifications = [
+            "Databricks Academy Accreditation",
+            "Google Analytics Certificate"
+        ]
+        
         self.interests = [
-            "Credit Risk Modeling",
-            "Fraud Detection",
-            "Healthcare Analytics",
-            "Feature Engineering",
-            "Model Interpretability"
+            "Predictive Modeling",
+            "Executive Dashboards",
+            "Data Governance",
+            "ETL Automation",
+            "A/B Testing"
         ]
     
     def get_summary(self) -> str:
@@ -89,6 +92,9 @@ class AboutMe:
         and e-commerce sectors. Delivered $1.7M+ in
         measurable cost savings and revenue impact through
         predictive analytics, KPI frameworks, and BI dashboards.
+        
+        Proficient in SQL, Python, R, SAS, Tableau, Power BI,
+        Looker, Snowflake, dbt, and Apache Airflow.
         """
 
     def contact(self):
@@ -107,59 +113,85 @@ if __name__ == "__main__":
   "skills.py": `"""
 Technical Skills & Expertise
 ============================
+Aligned to 2026 Data Analyst job market keywords
 """
 
 class TechnicalSkills:
     
-   data_analytics = {
-    "SQL (PostgreSQL, T-SQL, MySQL)": "████████████████████ 95%",
-    "Advanced Excel (Pivot, VBA)": "██████████████████░░ 90%",
-    "Python (pandas, NumPy)": "██████████████████░░ 90%",
-    "EDA & Root Cause Analysis": "████████████████████ 95%",
-}
+    data_analytics = {
+        "SQL (PostgreSQL, MySQL, T-SQL)":  "████████████████████ 95%",
+        "Advanced Excel (Pivot, VBA)":     "██████████████████░░ 90%",
+        "Python (pandas, NumPy)":          "██████████████████░░ 90%",
+        "EDA & Root Cause Analysis":       "████████████████████ 95%",
+        "Data Storytelling":               "████████████████░░░░ 85%",
+        "Cohort & Funnel Analysis":        "████████████████░░░░ 85%",
+    }
 
-bi_visualization = {
-    "Power BI (DAX, Power Query)": "██████████████████░░ 90%",
-    "Tableau": "██████████████████░░ 90%",
-    "Looker (LookML)": "██████████████░░░░░░ 80%",
-}
+    bi_visualization = {
+        "Power BI (DAX, Power Query)":     "██████████████████░░ 90%",
+        "Tableau":                         "██████████████████░░ 90%",
+        "Looker (LookML)":                 "██████████████░░░░░░ 80%",
+        "Executive Dashboards":            "████████████████████ 95%",
+    }
 
-modern_data_stack = {
-    "dbt": "██████████████░░░░░░ 80%",
-    "Apache Airflow": "██████████████░░░░░░ 80%",
-    "Snowflake": "████████████████░░░░ 85%",
-    "AWS / GCP / Azure": "████████████████░░░░ 85%",
-}
+    statistics_ml = {
+        "A/B Testing":                     "████████████████████ 95%",
+        "Hypothesis Testing":              "████████████████████ 95%",
+        "Regression & Classification":     "██████████████████░░ 90%",
+        "Time Series (ARIMA)":             "████████████████░░░░ 85%",
+        "Clustering & Segmentation":       "████████████████░░░░ 85%",
+        "Bayesian Analysis":               "██████████████░░░░░░ 80%",
+        "Feature Engineering":             "██████████████████░░ 90%",
+    }
 
-    
-    tools_platforms = [
-        "SQL Server",
-        "PostgreSQL",
-        "Azure Fabric",
-        "Azure ML Studio",
-        "AWS (S3, EC2)",
-        "Power BI",
-        "Tableau",
-        "Plotly",
-        "Git/GitHub"
+    modern_data_stack = {
+        "dbt":                             "██████████████░░░░░░ 80%",
+        "Apache Airflow":                  "████████████████░░░░ 85%",
+        "Snowflake":                       "████████████████░░░░ 85%",
+        "ETL/ELT Pipelines":              "██████████████████░░ 90%",
+        "SSIS":                            "██████████████░░░░░░ 80%",
+    }
+
+    cloud_platforms = {
+        "AWS (S3, Redshift, Glue)":        "████████████████░░░░ 85%",
+        "GCP (BigQuery)":                  "████████████████░░░░ 85%",
+        "Azure (Synapse, Data Factory)":   "████████████████░░░░ 85%",
+        "Databricks":                      "██████████████░░░░░░ 80%",
+    }
+
+    ai_genai = {
+        "NLP":                             "████████████████░░░░ 85%",
+        "LLM-Assisted Analytics":          "██████████████░░░░░░ 80%",
+        "GenAI Tools":                     "██████████████░░░░░░ 80%",
+    }
+
+    tools_collaboration = [
+        "Git/GitHub", "Jupyter Notebooks", "JIRA",
+        "Confluence", "Agile/Scrum", "SAS", "R",
+        "MongoDB (NoSQL)", "Power Query", "VBA"
     ]
     
-    domain_expertise = [
-        "Credit Risk",
-        "Fraud Detection",
-        "Portfolio Monitoring",
-        "Healthcare Analytics",
-        "Readmission Prediction",
-        "Model Documentation",
-        "Regulatory Compliance"
+    data_governance = [
+        "Data Quality Management",
+        "Data Lineage Tracking",
+        "Metadata Management",
+        "Compliance Monitoring",
+        "Data Integrity Checks"
     ]
     
     @staticmethod
     def display_skills():
         print("=" * 50)
-        print("          ML & STATISTICS")
+        print("          DATA ANALYTICS")
         print("=" * 50)
-        for skill, level in TechnicalSkills.ml_and_stats.items():
+        for skill, level in TechnicalSkills.data_analytics.items():
+            print(f"{skill}")
+            print(f"  {level}")
+        print()
+        print("=" * 50)
+        print("        BI & VISUALIZATION")
+        print("=" * 50)
+        for skill, level in TechnicalSkills.bi_visualization.items():
             print(f"{skill}")
             print(f"  {level}")
 
@@ -191,37 +223,44 @@ work_history = [
         location="United States",
         duration="Dec 2024 - Present",
         highlights=[
-            "Build predictive models for credit risk and fraud operations",
-            "Engineer datasets from 250K+ accounts, 3M+ monthly transactions",
-            "Develop tree-based models achieving 0.80+ AUC for credit risk",
-            "Design behavioral features using SQL window functions",
-            "Automate model refresh workflows reducing prep time by 60-70%",
-            "Generate SHAP-based explanations for portfolio reviews"
+            "Reduced default risk by 12% with predictive credit risk models (Python, SQL)",
+            "Increased fraud detection efficiency by 18% via anomaly detection automation",
+            "Reduced monthly reporting effort by 40% with Power BI & Tableau dashboards",
+            "Improved cross-sell success rate by 22% using customer segmentation models",
+            "Reduced data processing times by 35% optimizing ETL via Airflow + Snowflake",
+            "Identified $1.2M annual cost-saving opportunities through ad hoc analyses",
+            "Established data governance standards (95% downstream reporting accuracy)",
+            "Presented insights to C-suite executives influencing $2M+ in capital decisions",
+            "Leveraged GenAI/LLM tools reducing manual analysis time by 20%"
         ]
     ),
     Experience(
-        role="Data Scientist",
+        role="Data Analyst",
         company="Molina Healthcare",
         location="United States",
         duration="Jun 2021 - Aug 2023",
         highlights=[
-            "Built readmission risk models on 180K+ encounters (0.79 AUC)",
-            "Implemented SMOTE for class imbalance handling",
-            "Developed Power BI dashboards for 5+ cross-functional teams",
-            "Automated SQL data extracts reducing prep time by 40-45%",
-            "Translated findings into executive summaries for leadership"
+            "Reduced patient readmission rates by 15% with predictive models on 500K+ records",
+            "Recovered $500K+ in overpaid claims via fraud detection (Python, SQL)",
+            "Reduced manual ETL effort by 30% automating pipelines with Airflow & MongoDB",
+            "Improved reporting compliance by 20% with HEDIS/CMS KPI dashboards",
+            "Designed cohort analysis frameworks improving care plan adherence by 18%",
+            "Built NLP-based predictive risk scoring on patient notes (TensorFlow)",
+            "Built advanced Excel models with VBA macros for quarterly budget reviews"
         ]
     ),
     Experience(
         role="Data Analyst",
         company="Swiggy",
-        location="Bangalore, India",
+        location="India",
         duration="Apr 2020 - May 2021",
         highlights=[
-            "Analyzed 2M+ daily network performance records",
-            "Built SQL reporting pipelines reducing manual work by 30-40%",
-            "Conducted root-cause analysis on network incidents",
-            "Collaborated with stakeholders on KPI definitions"
+            "Increased order frequency by 10% analyzing purchase behavior with EDA & Tableau",
+            "Reduced stockouts by 15% with ARIMA sales forecasting models",
+            "Increased customer retention by 8% via segmentation (Scikit-learn clustering)",
+            "Improved on-time delivery by 12% with predictive delivery time models",
+            "Developed unit economics models (LTV/CAC) improving marketing ROI by 15%",
+            "Maintained version-controlled codebases using Git/GitHub on Azure"
         ]
     )
 ]
@@ -282,45 +321,74 @@ export function VSCodeApp() {
     setIsRunning(true);
     setOutput(["Running...", ""]);
 
-setTimeout(() => {
-  if (activeFile === "about_me.py") {
-  setOutput([
-  "Hello! I'm Chanakya Yadav",
-  "",
-  "Data Scientist with 4+ years of experience",
-  "building predictive models for credit risk",
-  "and fraud detection in financial services.",
-  "",
-  "📧 Email: chanakya.csv@gmail.com",
-  "📞 Phone: (214) 929-8802",
-  "💼 LinkedIn: linkedin.com/in/chanakya-csv",
-  "🐙 GitHub: https://github.com/chanakya-07",
-  ]);
-  } else if (activeFile === "skills.py") {
-  setOutput([
-  "==================================================",
-  "          DATA ANALYTICS",
-  "==================================================",
-  "SQL (PostgreSQL, T-SQL, MySQL)": "████████████████████ 95%",
-    "Advanced Excel (Pivot, VBA)": "██████████████████░░ 90%",
-    "Python (pandas, NumPy)": "██████████████████░░ 90%",
-    "EDA & Root Cause Analysis": "████████████████████ 95%",,
-  ]);
-  } else if (activeFile === "experience.py") {
-  setOutput([
-  "============================================================",
-  "            PROFESSIONAL EXPERIENCE",
-  "============================================================",
-  "",
-  "🏢 Data Analyst @ Synovus Bank",
-  "📍 United States | 📅 Dec 2024 - Present",
-  "  • Build predictive models for credit risk (0.80+ AUC)",
-  "  • Engineer datasets from 250K+ accounts",
-  "",
-  "🏢 Data Analyst @ Molina Healthcare",
-  "📍 United States | 📅 Jun 2021 - Aug 2023",
-  "  • Built readmission risk models (0.79 AUC)",
-  ]);
+    setTimeout(() => {
+      if (activeFile === "about_me.py") {
+        setOutput([
+          "Hello! I'm Chanakya Yadav",
+          "",
+          "Data Analyst with 4+ years of experience driving",
+          "data-informed decisions across banking, healthcare,",
+          "and e-commerce sectors. Delivered $1.7M+ in",
+          "measurable cost savings and revenue impact.",
+          "",
+          "📧 Email: chanakya.csv@gmail.com",
+          "📞 Phone: (214) 929-8802",
+          "💼 LinkedIn: linkedin.com/in/chanakya-csv",
+          "🐙 GitHub: https://github.com/chanakya-07",
+        ]);
+      } else if (activeFile === "skills.py") {
+        setOutput([
+          "==================================================",
+          "          DATA ANALYTICS",
+          "==================================================",
+          "SQL (PostgreSQL, MySQL, T-SQL)",
+          "  ████████████████████ 95%",
+          "Advanced Excel (Pivot, VBA)",
+          "  ██████████████████░░ 90%",
+          "Python (pandas, NumPy)",
+          "  ██████████████████░░ 90%",
+          "EDA & Root Cause Analysis",
+          "  ████████████████████ 95%",
+          "Data Storytelling",
+          "  ████████████████░░░░ 85%",
+          "Cohort & Funnel Analysis",
+          "  ████████████████░░░░ 85%",
+          "",
+          "==================================================",
+          "        BI & VISUALIZATION",
+          "==================================================",
+          "Power BI (DAX, Power Query)",
+          "  ██████████████████░░ 90%",
+          "Tableau",
+          "  ██████████████████░░ 90%",
+          "Looker (LookML)",
+          "  ██████████████░░░░░░ 80%",
+          "Executive Dashboards",
+          "  ████████████████████ 95%",
+        ]);
+      } else if (activeFile === "experience.py") {
+        setOutput([
+          "============================================================",
+          "            PROFESSIONAL EXPERIENCE",
+          "============================================================",
+          "",
+          "🏢 Data Analyst @ Synovus Bank",
+          "📍 United States | 📅 Dec 2024 - Present",
+          "  • Reduced default risk by 12% with predictive credit risk models",
+          "  • Increased fraud detection efficiency by 18%",
+          "  • Identified $1.2M annual cost-saving opportunities",
+          "  • Presented insights to C-suite influencing $2M+ decisions",
+          "",
+          "🏢 Data Analyst @ Molina Healthcare",
+          "📍 United States | 📅 Jun 2021 - Aug 2023",
+          "  • Reduced patient readmission rates by 15% on 500K+ records",
+          "  • Recovered $500K+ in overpaid claims via fraud detection",
+          "",
+          "🏢 Data Analyst @ Swiggy",
+          "📍 India | 📅 Apr 2020 - May 2021",
+          "  • Increased order frequency by 10% with EDA & Tableau",
+          "  • Improved marketing ROI by 15% with unit economics models",
+        ]);
       }
       setIsRunning(false);
     }, 800);
